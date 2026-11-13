@@ -14,6 +14,8 @@ android {
         targetSdk = 34
         versionCode = (System.getenv("VERSION_CODE") ?: "1").toInt()
         versionName = "2." + (System.getenv("VERSION_CODE") ?: "0")
+        // Téléphones Android récents uniquement (dont le Galaxy S21) : APK deux fois plus léger.
+        ndk { abiFilters += "arm64-v8a" }
     }
 
     // Clé de signature fixe, versionnée avec le projet : chaque nouvel APK
