@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="icone_fond">#6E1A27</color>
+    <style name="Theme.Cave" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">#FBF8F4</item>
+    </style>
+</resources>
